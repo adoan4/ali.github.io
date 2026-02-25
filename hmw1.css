@@ -6,17 +6,56 @@ Date Updated: 2026/02/25
 Version: 1.01
 Purpose: Style sheet for hmw1.html
 */
-body {
+body 
+{
   background-color: #f8f4ff;
   font-family: "Georgia", serif;
 }
-#header {
+
+#header 
+{
   text-align: center;
   background-color:#5b479a;
+  font-family: "Georgia", serif;
   color: white;
   padding: 20px;
 }
 
-.logo {
+.logo 
+{
   width: 80px;
+}
+
+table
+{
+  margin: auto;
+  font-family: "Georgia", serif;
+  background-color: rgb(165,133,201);
+  padding: 15px;
+}
+
+th
+{
+  color: #786b9e;
+  font-family: "Georgia", serif;
+  margin: auto;
+  padding: 10px;
+}
+
+#footer 
+{
+  text-align: center;
+  font-family: "Georgia", serif;
+  background-color: #5b479a;
+  padding: 10px;
+}
+
+a
+{
+  color: blue;
+}
+
+a
+{
+  color: purple;
 }
