@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.14
+Version: 1.16
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -29,15 +29,19 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
     <hr>
 
     <!---------- main ----------->
-    <dive id="main"
+    <div id="main">
       <form action="thankyou.html">
         <table>
           <tr>
             <td>First Name:</td>
               <td>
                 <input type="text" name="firstname" maxlength="30" required>
-                pattern="\d{2}/\d{2}/\d{4}"
+          </tr>
+          <tr>
+                <input type="text" pattern="\d{2}/\d{2}/\d{4}" placeholder="MM/DD/YYYY" required>
+          </tr>
                 <input type="password" maxlength="11">
+          <tr>
                 <select name="state" required>
              <option value=""></option>
                 <option value="AL">Alabama</option>
@@ -92,6 +96,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
                 </select>
+          </tr>
                 <input type="text" pattern="[0-9]{5,10}">
               </td>
             </td>
