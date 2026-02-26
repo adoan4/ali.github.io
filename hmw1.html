@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.19
+Version: 1.20
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -32,6 +32,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
     <div id="main">
       <form action="thankyou.html">
         <table>
+          
           <tr>
             <td>First Name:</td>
               <td>
@@ -40,7 +41,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 
             <td>Middle Initial:</td>
             <td>
-                <input type="text" name="middleinitial" placeholder="Middle Initial" maxlength="1" required>
+                <input type="text" name="middleinitial" placeholder="Initial" maxlength="1" required>
             </td>
             
             <td>Last Name:</td>
@@ -69,7 +70,12 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
 
           <tr>
-            <td>State:</td>
+            <td>City, State, Zip</td>
+            
+            <td>
+              <input type="text">
+            </td>
+            
             <td>
                 <select name="state" required>
                   <option value=""></option>
@@ -126,19 +132,17 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
                   <option value="WY">Wyoming</option>
                 </select>
             </td>
+            
+            <td>Zipcode:</td>
+            <td>
+              <input type="text" pattern="[0-9]{5,10} placeholder="00000">
+            </td>
           </tr>
 
           <tr>
             <td>Social Security:</td>
             <td>
               <input type="password" maxlength="11" placeholder="XXX XX XXXX">
-            </td>
-          </tr>
-
-          <tr>
-            <td>Zipcode:</td>
-            <td>
-              <input type="text" pattern="[0-9]{5,10} placeholder="00000">
             </td>
           </tr>
 
