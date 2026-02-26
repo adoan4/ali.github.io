@@ -52,6 +52,11 @@ th
   padding: 10px;
 }
 
+.slider
+{
+  width:100%;
+}
+
 a
 {
   color: blue;
