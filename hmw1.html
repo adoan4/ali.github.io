@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.20
+Version: 1.21
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -34,19 +34,17 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
         <table>
           
           <tr>
-            <td>First Name:</td>
+            <td>Full Name:</td>
               <td>
-                <input type="text" name="firstname" placeholder="First" maxlength="30" required>
+                <input type="text" name="firstname" placeholder="First Name" maxlength="30" required>
               </td>
 
-            <td>Middle Initial:</td>
             <td>
-                <input type="text" name="middleinitial" placeholder="Initial" maxlength="1" required>
+                <input type="text" name="middleinitial" placeholder="Middle Initial" maxlength="1" required>
             </td>
             
-            <td>Last Name:</td>
               <td>
-                <input type="text" name="lastname" placeholder="Last" maxlength="30" required>
+                <input type="text" name="lastname" placeholder="Last Name" maxlength="30" required>
               </td>
           </tr>
           
@@ -54,6 +52,11 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           <td>Date of Birth:</td>
             <td>
                 <input type="text" pattern="\d{2}/\d{2}/\d{4}" placeholder="MM/DD/YYYY" required>
+            </td>
+            
+            <td>Social Security:</td>
+            <td>
+              <input type="password" maxlength="11" placeholder="XXX XX XXXX">
             </td>
           </tr>
 
@@ -70,14 +73,25 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
 
           <tr>
+            <td>Address Line 1:</td>
+            <td>
+              <input type="text" maxlength="30" placeholder="123 Any Ln">
+            </td>
+            <td>Address Line 2:</td>
+            <td>
+              <input type="text" maxlength="30" placeholder="Apt">
+            </td>
+          </tr>
+          
+          <tr>
             <td>City, State, Zip</td>
             
             <td>
-              <input type="text">
+              <input type="text" maxlength="30" placeholder="City">
             </td>
             
             <td>
-                <select name="state" required>
+                <select name="state" placeholder="Select" required>
                   <option value=""></option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
@@ -140,12 +154,36 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
 
           <tr>
-            <td>Social Security:</td>
+            <td>Email:</td>
             <td>
-              <input type="password" maxlength="11" placeholder="XXX XX XXXX">
+              <input type="email" placeholder="email@provider.com">
+            </td>
+
+            <td>Phone #:</td>
+            <td>
+            <input type="text" pattern="\d{3}+-\d{3}+-\d{4}" placeholder="###-###-####">
             </td>
           </tr>
 
+          <tr>
+            <td>Symptoms Occuring:</td>
+            <td>
+              <textarea name="symptoms" rows="3" cols="50">
+              </textarea>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Check all that apply:</td>
+            <td>
+              <input type="checkbox" name="symptom"> Fever<br>
+              <input type="checkbox" name="symptom"> Headache<br>
+              <input type="checkbox" name="symptom"> Vomiting<br>
+              <input type="checkbox" name="symptom"> Heartburn<br>
+              <input type="checkbox" name="symptom"> Rash<br>
+              <input type="checkbox" name="symptom"> Sore Throat<br>
+            </td>
+          </tr>
           
         </table>
     </div>
