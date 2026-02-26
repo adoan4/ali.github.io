@@ -17,7 +17,7 @@ body
   text-align: center;
   background-color:#5b479a;
   font-family: "Georgia", serif;
-  color: white;
+  color: #f8f4ff;
   padding: 20px;
 }
 
@@ -47,6 +47,7 @@ th
 {
   text-align: center;
   font-family: "Georgia", serif;
+  color: #f8f4ff;
   background-color: #5b479a;
   padding: 10px;
 }
