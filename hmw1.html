@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.21
+Version: 1.22
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -40,7 +40,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
               </td>
 
             <td>
-                <input type="text" name="middleinitial" placeholder="Middle Initial" maxlength="1" required>
+                <input type="text" name="middleinitial" size="1" placeholder="Middle Initial" maxlength="1" required>
             </td>
             
               <td>
@@ -84,14 +84,14 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
           
           <tr>
-            <td>City, State, Zip</td>
+            <td>City, State, Zip:</td>
             
             <td>
               <input type="text" maxlength="30" placeholder="City">
             </td>
             
             <td>
-                <select name="state" placeholder="Select" required>
+                <select name="state" placeholder="Select State" required>
                   <option value=""></option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
@@ -147,9 +147,8 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
                 </select>
             </td>
             
-            <td>Zipcode:</td>
             <td>
-              <input type="text" pattern="[0-9]{5,10} placeholder="00000">
+              <input type="text" pattern="\d{5,10} placeholder="123456">
             </td>
           </tr>
 
@@ -161,20 +160,12 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 
             <td>Phone #:</td>
             <td>
-            <input type="text" pattern="\d{3}+-\d{3}+-\d{4}" placeholder="###-###-####">
+            <input type="text" pattern="\d{3}+-\d{3}+-\d{4}" placeholder="### - ### - ####">
             </td>
           </tr>
 
           <tr>
             <td>Symptoms Occuring:</td>
-            <td>
-              <textarea name="symptoms" rows="3" cols="50">
-              </textarea>
-            </td>
-          </tr>
-          
-          <tr>
-            <td>Check all that apply:</td>
             <td>
               <input type="checkbox" name="symptom"> Fever<br>
               <input type="checkbox" name="symptom"> Headache<br>
@@ -182,6 +173,14 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
               <input type="checkbox" name="symptom"> Heartburn<br>
               <input type="checkbox" name="symptom"> Rash<br>
               <input type="checkbox" name="symptom"> Sore Throat<br>
+            </td>
+          </tr>
+          
+           <tr>
+            <td>Describe symptoms in detail:</td>
+            <td>
+              <textarea name="symptoms" rows="3" cols="50">
+              </textarea>
             </td>
           </tr>
           
