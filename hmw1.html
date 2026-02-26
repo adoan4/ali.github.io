@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.18
+Version: 1.19
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -40,10 +40,10 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 
             <td>Middle Initial:</td>
             <td>
-                <input type="text" name="middleinitial" placeholder="X" maxlength="1" required>
+                <input type="text" name="middleinitial" placeholder="Middle Initial" maxlength="1" required>
             </td>
             
-            <td> Last Name:</td>
+            <td>Last Name:</td>
               <td>
                 <input type="text" name="lastname" placeholder="Last" maxlength="30" required>
               </td>
@@ -57,9 +57,14 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
 
           <tr>
+            <td>User ID:</td>
+            <td>
+              <input type="text" maxlength=20" placerholder="ID Input">
+            </td>
+            
             <td>Password:</td>
             <td>
-                <input type="password" maxlength="11">
+                <input type="password" maxlength="11" placeholder="Password Input">
             </td>
           </tr>
 
@@ -122,11 +127,22 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
                 </select>
             </td>
           </tr>
-          
-                <input type="text" pattern="[0-9]{5,10}">
-              </td>
+
+          <tr>
+            <td>Social Security:</td>
+            <td>
+              <input type="password" maxlength="11" placeholder="XXX XX XXXX">
             </td>
           </tr>
+
+          <tr>
+            <td>Zipcode:</td>
+            <td>
+              <input type="text" pattern="[0-9]{5,10} placeholder="00000">
+            </td>
+          </tr>
+
+          
         </table>
     </div>
   </body>
