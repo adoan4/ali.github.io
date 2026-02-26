@@ -84,7 +84,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
             </td>
             <td>Address Line 2:</td>
             <td>
-              <input type="text" maxlength="30" placeholder="Apt">
+              <input type="text" maxlength="30" placeholder="Apt #">
             </td>
           </tr>
           
@@ -171,7 +171,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 
           <tr>
             <td>How are you feeling now? (1-10)</td>
-            <td colspan="3" style="text-align: right;">>
+            <td colspan="3" style="text-align: left;">
               <input type="range" name="health" min="1" max="10">
             </td>
           </tr>
@@ -190,8 +190,9 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           
            <tr>
             <td>Describe symptoms in detail:</td>
-            <td colspan="3" style="text-align: right;">
-              <textarea name="symptoms" rows="3" cols="50">
+            <td colspan="3" style="text-align: left;">
+              <textarea name="symptoms" rows="3" cols="50" 
+                placeholder="Explain in detail your health symptoms.">
               </textarea>
             </td>
           </tr>
