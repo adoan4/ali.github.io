@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.26
+Version: 1.27
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -22,7 +22,6 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
       -->
       <h1>SoReal Medical</h1>
       <h3>Patient Registration Form</h3>
-      <!-- placeholder for Java date-->
       <p id="today"></p>
     </div>
 
@@ -38,10 +37,16 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
             <td>
               <input type="text" maxlength=20" placerholder="ID Input">
             </td>
-            
+          </tr>
+
+          <tr>
             <td>Password:</td>
             <td>
                 <input type="password" maxlength="11" placeholder="Password Input">
+            </td>
+            <td>Reenter Password:</td>
+            <td>
+                <input type="password" maxlength="11" placeholder="Reenter Password">
             </td>
           </tr>
           
@@ -155,7 +160,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           <tr>
             <td>Email:</td>
             <td>
-              <input type="email" placeholder="email@provider.com">
+              <input type="email" placeholder="email@domain.com">
             </td>
 
             <td>Phone #:</td>
@@ -165,8 +170,8 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
 
           <tr>
-            <td>How are you feeling now? (1-10)</td>
-            <td>
+            <td colspan="2">How are you feeling now? (1-10)</td>
+            <td colspan="2">
               <input type="range" name="health" min="1" max="10">
             </td>
           </tr>
@@ -198,6 +203,13 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
               <input type="radio" name="insurance">No
             </td>
           </tr>
+
+          <tr>
+            <td colspan="3" style="text-align: center;">
+              <input type="reset" value="Clear and Restart">
+              <input type="submit" value="Submit Form">
+                </td>
+          </tr>
           
         </table>
       </form>
@@ -211,6 +223,10 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
         Contact US
       </button>
     </div>
+
+<script>
+  document.getElementById("today").innerHTML = "Today is: " + new Date().toLocaleDateString();
+</script>
     
   </body>
 </html>
