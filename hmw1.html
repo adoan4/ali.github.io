@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 2026-02-09
 Date updated: 2026-02-25
-Version: 1.29
+Version: 1.31
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -170,6 +170,14 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           </tr>
 
           <tr>
+            <td>Would you like to be contacted for updates?</td>
+            <td>
+              <input type="radio" name="updates">Yes
+              <input type="radio" name="updates">No
+            </td>
+          </tr>
+          
+          <tr>
             <td>How are you feeling now? (1-10)</td>
             <td colspan="3" style="text-align: left;">
               <input type="range" name="health" min="1" max="10">
@@ -182,6 +190,8 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
               <input type="checkbox" name="symptom"> Fever<br>
               <input type="checkbox" name="symptom"> Headache<br>
               <input type="checkbox" name="symptom"> Vomiting<br>
+            </td>
+            <td>
               <input type="checkbox" name="symptom"> Heartburn<br>
               <input type="checkbox" name="symptom"> Rash<br>
               <input type="checkbox" name="symptom"> Sore Throat<br>
