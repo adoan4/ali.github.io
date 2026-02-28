@@ -4,7 +4,7 @@ Name: Alison Doan
 File: hmw1.html
 Date created: 02/09/2026
 Date updated: 02/27/2026
-Version: 1.38
+Version: 1.39
 Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 -->
 <html lang="en">
@@ -40,11 +40,11 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
           <tr>
             <td>Password:</td>
             <td>
-                <input type="password" maxlength="11" placeholder="Password Input" required>
+                <input type="password" maxlength="20" placeholder="Password Input" required>
             </td>
             <td>Confirm Password:</td>
             <td>
-                <input type="password" maxlength="11" placeholder="Re-enter Password" required>
+                <input type="password" maxlength="20" placeholder="Confirm Password" required>
             </td>
           </tr>
           
@@ -66,9 +66,9 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
            <tr>
             <td>Gender:</td>
             <td colspan="2" style="text-align: left;">
-              <input type="radio" name="gender">Female
-              <input type="radio" name="gender">Male
-              <input type="radio" name="gender">Other
+              <input type="radio" name="gender"value="female">Female
+              <input type="radio" name="gender"value="male">Male
+              <input type="radio" name="gender"value="other">Other
             </td>
           </tr>
           
@@ -104,7 +104,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
             
             <td>
                 <select name="state" required>
-                  <option value=""diabled selected>Select State</option>
+                  <option value=""disabled selected>Select State</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -172,7 +172,7 @@ Purpose: MIS 3371 Homework 1 demonstrating HTML form elements and CSS styling.
 
             <td>Phone #:</td>
             <td>
-            <input type="text" pattern="(\d{3})\d{3}-\d{4}" placeholder="(123)456-7890">
+            <input type="text" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890">
             </td>
           </tr>
 
