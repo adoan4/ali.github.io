@@ -2,8 +2,8 @@
 Name: Alison Doan
 File: hmw1.css
 Date Created: 02/25/2026
-Date Updated: 02/26/2026
-Version: 1.06
+Date Updated: 02/26/2027
+Version: 1.07
 Purpose: Style sheet for hmw1.html
 */
 body 
@@ -59,12 +59,24 @@ th
   width:100%;
 }
 
-a
+input[name="submitbutton"]
+{
+  background-color: #5b479a;
+  color: white;
+}
+
+input[name="resetbutton"]
+{
+  background-color: #5b479a;
+  color: white;
+}
+
+a:visited
 {
   color: blue;
 }
 
-a
+a:hover
 {
   color: purple;
 }
